@@ -36,6 +36,12 @@ namespace TestForGitWebApi.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+
+            int totalRecord = 30;
+            if(rng.Next() > 10000)
+            {
+                totalRecord++;
+            }
         }
     }
 }
